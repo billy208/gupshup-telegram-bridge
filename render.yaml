@@ -1,0 +1,16 @@
+
+services:
+  - type: web
+    name: gupshup-telegram-bridge
+    env: python
+    buildCommand: ""
+    startCommand: "python main.py"
+    envVars:
+      - key: GUPSHUP_API_KEY
+        sync: false
+      - key: GUPSHUP_APP_NAME
+        sync: false
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: TELEGRAM_CHAT_ID
+        sync: false
